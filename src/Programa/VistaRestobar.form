@@ -57,11 +57,7 @@
                   <Component id="btnVistaMesa" min="-2" pref="142" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="btnVistaProducto" min="-2" pref="142" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="btnVistaPedido" min="-2" pref="142" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="btnVistaStock" min="-2" pref="142" max="-2" attributes="0"/>
-                  <EmptySpace pref="229" max="32767" attributes="0"/>
+                  <EmptySpace pref="549" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
@@ -74,13 +70,9 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="btnVistaProducto" alignment="3" min="-2" pref="62" max="-2" attributes="0"/>
-                          <Component id="btnVistaMesa" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="btnVistaPedido" max="32767" attributes="0"/>
-                      <Component id="btnVistaStock" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="btnVistaProducto" alignment="3" min="-2" pref="62" max="-2" attributes="0"/>
+                      <Component id="btnVistaMesa" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="content" pref="407" max="32767" attributes="0"/>
@@ -110,22 +102,6 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
         </Container>
-        <Component class="javax.swing.JButton" name="btnVistaPedido">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="PEDIDO"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVistaPedidoActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnVistaStock">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="STOCK"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVistaStockActionPerformed"/>
-          </Events>
-        </Component>
       </SubComponents>
     </Container>
   </SubComponents>

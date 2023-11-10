@@ -21,8 +21,6 @@ public class VistaRestobar extends javax.swing.JFrame {
         btnVistaMesa = new javax.swing.JButton();
         btnVistaProducto = new javax.swing.JButton();
         content = new javax.swing.JScrollPane();
-        btnVistaPedido = new javax.swing.JButton();
-        btnVistaStock = new javax.swing.JButton();
 
         jMenu1.setText("jMenu1");
 
@@ -42,20 +40,6 @@ public class VistaRestobar extends javax.swing.JFrame {
             }
         });
 
-        btnVistaPedido.setText("PEDIDO");
-        btnVistaPedido.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnVistaPedidoActionPerformed(evt);
-            }
-        });
-
-        btnVistaStock.setText("STOCK");
-        btnVistaStock.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnVistaStockActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -65,11 +49,7 @@ public class VistaRestobar extends javax.swing.JFrame {
                 .addComponent(btnVistaMesa, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnVistaProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnVistaPedido, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnVistaStock, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(229, Short.MAX_VALUE))
+                .addContainerGap(549, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(content)
@@ -79,12 +59,9 @@ public class VistaRestobar extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnVistaProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnVistaMesa, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btnVistaPedido, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnVistaStock, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnVistaProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnVistaMesa, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(content, javax.swing.GroupLayout.DEFAULT_SIZE, 407, Short.MAX_VALUE)
                 .addContainerGap())
@@ -116,16 +93,6 @@ public class VistaRestobar extends javax.swing.JFrame {
             VistaProducto producto= new VistaProducto();
             ShowPanel(producto);
     }//GEN-LAST:event_btnVistaProductoActionPerformed
-
-    private void btnVistaPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVistaPedidoActionPerformed
-        VistaPedido pedido = new VistaPedido();
-        ShowPanel(pedido);
-    }//GEN-LAST:event_btnVistaPedidoActionPerformed
-
-    private void btnVistaStockActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVistaStockActionPerformed
-        VistaStock  stock = new VistaStock();
-        ShowPanel(stock);
-    }//GEN-LAST:event_btnVistaStockActionPerformed
 
     public void ShowPanel(JPanel p){
         
@@ -175,9 +142,7 @@ public class VistaRestobar extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnVistaMesa;
-    private javax.swing.JButton btnVistaPedido;
     private javax.swing.JButton btnVistaProducto;
-    private javax.swing.JButton btnVistaStock;
     private javax.swing.JScrollPane content;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JPanel jPanel1;
