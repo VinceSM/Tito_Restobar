@@ -52,8 +52,9 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="btnAgregarMesa" max="32767" attributes="0"/>
-                              <Component id="btnVerMesa" max="32767" attributes="0"/>
+                              <Component id="btnAgregarPedido" max="32767" attributes="0"/>
                               <Component id="btnEliminarMesa" alignment="0" pref="226" max="32767" attributes="0"/>
+                              <Component id="btnEliminarPedido" alignment="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -82,9 +83,11 @@
                       <Group type="102" attributes="0">
                           <Component id="btnAgregarMesa" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="btnVerMesa" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="btnEliminarMesa" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                          <Component id="btnAgregarPedido" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="btnEliminarPedido" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
@@ -122,10 +125,13 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAgregarMesaActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnVerMesa">
+        <Component class="javax.swing.JButton" name="btnAgregarPedido">
           <Properties>
-            <Property name="text" type="java.lang.String" value="VER MESA"/>
+            <Property name="text" type="java.lang.String" value="AGREGAR PEDIDO"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAgregarPedidoActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnEliminarMesa">
           <Properties>
@@ -160,6 +166,11 @@
           </SubComponents>
         </Container>
         <Component class="javax.swing.JSeparator" name="Separador1">
+        </Component>
+        <Component class="javax.swing.JButton" name="btnEliminarPedido">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="ELIMINAR PEDIDO"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>

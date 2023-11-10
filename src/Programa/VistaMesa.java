@@ -33,12 +33,13 @@ public class VistaMesa extends javax.swing.JPanel {
         btnCrearMesa = new javax.swing.JButton();
         btnLimpiarNombre = new javax.swing.JButton();
         btnAgregarMesa = new javax.swing.JButton();
-        btnVerMesa = new javax.swing.JButton();
+        btnAgregarPedido = new javax.swing.JButton();
         btnEliminarMesa = new javax.swing.JButton();
         txtNombreMesa = new javax.swing.JTextField();
         ListaMesas = new javax.swing.JScrollPane();
         ListMesa = new javax.swing.JList<>();
         Separador1 = new javax.swing.JSeparator();
+        btnEliminarPedido = new javax.swing.JButton();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -65,7 +66,12 @@ public class VistaMesa extends javax.swing.JPanel {
             }
         });
 
-        btnVerMesa.setText("VER MESA");
+        btnAgregarPedido.setText("AGREGAR PEDIDO");
+        btnAgregarPedido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAgregarPedidoActionPerformed(evt);
+            }
+        });
 
         btnEliminarMesa.setText("ELIMINAR MESA");
         btnEliminarMesa.addActionListener(new java.awt.event.ActionListener() {
@@ -82,6 +88,8 @@ public class VistaMesa extends javax.swing.JPanel {
 
         ListMesa.setModel(new DefaultListModel<String>());
         ListaMesas.setViewportView(ListMesa);
+
+        btnEliminarPedido.setText("ELIMINAR PEDIDO");
 
         javax.swing.GroupLayout jpMesaLayout = new javax.swing.GroupLayout(jpMesa);
         jpMesa.setLayout(jpMesaLayout);
@@ -107,8 +115,9 @@ public class VistaMesa extends javax.swing.JPanel {
                         .addGap(18, 18, 18)
                         .addGroup(jpMesaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(btnAgregarMesa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnVerMesa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnEliminarMesa, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE))))
+                            .addComponent(btnAgregarPedido, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnEliminarMesa, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
+                            .addComponent(btnEliminarPedido, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         jpMesaLayout.setVerticalGroup(
@@ -130,9 +139,11 @@ public class VistaMesa extends javax.swing.JPanel {
                     .addGroup(jpMesaLayout.createSequentialGroup()
                         .addComponent(btnAgregarMesa)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnVerMesa)
+                        .addComponent(btnEliminarMesa)
+                        .addGap(11, 11, 11)
+                        .addComponent(btnAgregarPedido)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnEliminarMesa)))
+                        .addComponent(btnEliminarPedido)))
                 .addGap(87, 87, 87))
         );
 
@@ -208,16 +219,21 @@ public class VistaMesa extends javax.swing.JPanel {
     }
     }//GEN-LAST:event_btnEliminarMesaActionPerformed
 
+    private void btnAgregarPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarPedidoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAgregarPedidoActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JList<String> ListMesa;
     private javax.swing.JScrollPane ListaMesas;
     private javax.swing.JSeparator Separador1;
     private javax.swing.JButton btnAgregarMesa;
+    private javax.swing.JButton btnAgregarPedido;
     private javax.swing.JButton btnCrearMesa;
     private javax.swing.JButton btnEliminarMesa;
+    private javax.swing.JButton btnEliminarPedido;
     private javax.swing.JButton btnLimpiarNombre;
-    private javax.swing.JButton btnVerMesa;
     private javax.swing.JPanel jpMesa;
     private javax.swing.JLabel lblNombreMesa;
     private javax.swing.JTextField txtNombreMesa;
